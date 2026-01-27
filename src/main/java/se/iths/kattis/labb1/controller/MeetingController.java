@@ -4,15 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import se.iths.kattis.labb1.model.Meeting;
 import se.iths.kattis.labb1.service.MeetingService;
 
 @Controller
 @RequestMapping("/")
 public class MeetingController {
     private final MeetingService meetingService;
-
-    private Meeting meeting;
 
     public MeetingController(MeetingService meetingService) {
         this.meetingService = meetingService;
