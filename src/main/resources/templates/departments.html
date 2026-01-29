@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Departments</title>
+</head>
+<body>
+
+<h1>Company Departments</h1>
+
+<ul>
+    <li th:each="department : ${departments}">
+        <p><strong>Name:</strong> <span th:text="${department.name}"></span></p>
+        <p><strong>Location:</strong> <span th:text="${department.location}"></span></p>
+        <hr>
+    </li>
+</ul>
+
+</body>
+</html>
