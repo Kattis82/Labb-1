@@ -9,6 +9,7 @@ import se.iths.kattis.labb1.service.EmployeeService;
 @Controller
 @RequestMapping("/")
 public class EmployeeController {
+
     private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
@@ -18,7 +19,7 @@ public class EmployeeController {
 
     @GetMapping("/employees")
     public String getEmployees(Model model) {
-        //model.addAttribute("employees", userService.getAllUsers());
+        model.addAttribute("employees", employeeService.getAllEmployees());
         return "employees";
     }
 }
