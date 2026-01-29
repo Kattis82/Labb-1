@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tasklist</title>
+</head>
+<body>
+<h1>Alla uppgifter</h1>
+<ul>
+    <li th:each="task : ${tasks}" th:text="${task}">Uppgifter</li>
+</ul>
+</body>
+</html>
