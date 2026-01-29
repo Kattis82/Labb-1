@@ -11,7 +11,7 @@ public class HomeController {
 
     @GetMapping
     public String home(Model model) {
-        model.addAttribute("message", "Välkommen Kattis");
+        model.addAttribute("message", "Välkommen Johanna!");
         return "message";
     }
 }
