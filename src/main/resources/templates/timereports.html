@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Time report</title>
+</head>
+<body>
+<h1>Alla tidsrapporteringar</h1>
+<ul>
+    <li th:each="timereport : ${timereports}" th:text="${timereport}">Tidsrapportering</li>
+</ul>
+</body>
+</html>
