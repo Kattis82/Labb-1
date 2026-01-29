@@ -18,7 +18,7 @@ public class FakeController {
 
 
     @GetMapping("/fake")
-    public String showFakes(Model model) {
+    public String getFakes(Model model) {
         model.addAttribute("fake", fakeService.getAllFake());
         return "fake";
     }
