@@ -8,10 +8,10 @@ import se.iths.kattis.labb1.service.TimeReportService;
 
 @Controller
 @RequestMapping("/")
-public class TimereportController {
+public class TimeReportController {
     private final TimeReportService timeReportService;
 
-    public TimereportController(TimeReportService timeReportService) {
+    public TimeReportController(TimeReportService timeReportService) {
         this.timeReportService = timeReportService;
     }
 
