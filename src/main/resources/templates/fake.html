@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Fake list</title>
+</head>
+<body>
+<h1>Alla fejk</h1>
+<ul>
+    <li th:each="fake : ${fake}" th:text="${fake}">Fejk</li>
+</ul>
+</body>
+</html>
